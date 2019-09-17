@@ -1,0 +1,9 @@
+**/.git
+**/.svn
+**/.hg
+**/CVS
+**/.DS_Store
+.vscode/
+**/*.pyc
+**/__pycache__/
+db.sqlite3
