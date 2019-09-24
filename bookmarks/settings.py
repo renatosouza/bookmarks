@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['mysite.com', 
                  'localhost', 
                  '127.0.0.1',
-                 '2edcf399.ngrok.io'
+                 '47d9e345.ngrok.io'
                 ]
 
 
@@ -149,3 +149,9 @@ AUTHENTICATION_BACKENDS = [
 
 SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '781424035262-fjfjj3ntudhdje2lp9der9jsbnt7q0f4.apps.googleusercontent.com'
 SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'dBx8Cmg_TIXoLpXkn-7lZjDf'
+
+
+from django.urls import reverse_lazy
+ABSOLUTE_URL_OVERRIDES = {
+    'auth.user': lambda u: reverse_lazy('user_detail', args=[u.username])
+}
