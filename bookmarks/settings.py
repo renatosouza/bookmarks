@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['mysite.com', 
                  'localhost', 
                  '127.0.0.1',
-                 '47d9e345.ngrok.io'
+                 '83db18d7.ngrok.io'
                 ]
 
 
